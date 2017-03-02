@@ -1,4 +1,16 @@
+---
+declared-services:
+  my-conversation-service:
+    label: conversation
+    plan: free
 applications:
-- name: node-hello-world
-  memory: 128M
-  buildpack: sdk-for-nodejs
+- name: pickme-virtual-mil
+  command: npm start
+  path: .
+  memory: 256M
+  instances: 1
+  services:
+    - my-conversation-service
+  env:
+    NPM_CONFIG_PRODUCTION: false
+  host: pickme-virtual-mil

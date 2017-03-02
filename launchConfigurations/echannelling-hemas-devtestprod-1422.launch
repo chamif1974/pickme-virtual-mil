@@ -1,0 +1,14 @@
+{
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.ng.bluemix.net",
+      "Org": "atshaffy@lk.ibm.com",
+      "Space": "devtest"
+    },
+    "Name": "echannelling-hemas-devtestprod-1422",
+    "Instrumentation": {}
+  },
+  "Path": "",
+  "Type": "Cloud Foundry"
+}
